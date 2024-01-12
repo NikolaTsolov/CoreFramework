@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>nts-ui-af</artifactId>
+    <artifactId>nts-java-tests</artifactId>
 
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
@@ -17,34 +17,19 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-jar-plugin</artifactId>
-                <version>3.3.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>test-jar</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-
     <dependencies>
         <dependency>
-            <groupId>org.seleniumhq.selenium</groupId>
-            <artifactId>selenium-java</artifactId>
-            <version>4.16.1</version>
-            <scope>test</scope>
+            <groupId>org.nts.java.af</groupId>
+            <artifactId>nts-ui-af</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <type>test-jar</type>
         </dependency>
         <dependency>
             <groupId>org.nts.java.af</groupId>
-            <artifactId>nts-utilities</artifactId>
+            <artifactId>nts-ui-af</artifactId>
             <version>1.0-SNAPSHOT</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
+
 </project>

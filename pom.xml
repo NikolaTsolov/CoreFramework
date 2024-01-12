@@ -12,6 +12,7 @@
         <module>CoreApiFramework</module>
         <module>UIFramework</module>
         <module>Utilities</module>
+        <module>UITests</module>
     </modules>
 
     <properties>

@@ -14,7 +14,7 @@ public class DriverFactory {
     private static final Logger logger = LoggerFactory.getLogger(DriverFactory.class);
 
     public WebDriver createInstance(String browser) {
-        Target target = Target.valueOf(config().get("target").toString().toUpperCase());
+        Target target = Target.valueOf(config().getProperty("target").toString().toUpperCase());
 
         return switch (target) {
             case LOCAL -> BrowserFactory.valueOf(browser.toUpperCase()).createDriver();
