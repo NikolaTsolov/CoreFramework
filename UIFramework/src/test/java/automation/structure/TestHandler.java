@@ -30,4 +30,8 @@ public class TestHandler {
     protected GitWelcomePage getGitWelcomePage() {
         return new GitWelcomePage(this.webDriver);
     }
+
+    public String getCurrentURL() {
+        return this.webDriver.getCurrentUrl();
+    }
 }
